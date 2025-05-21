@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    gap: 16px; /* Adjust the gap between items as needed */
+  }
+  .centered-input {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* Ensure the container has a height */
+  }
+  .popular-image {
+    width: 400px; /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    object-fit: cover; /* This will maintain the aspect ratio while covering the entire area */
+}
+
+  @media (min-width: 768px) { /* Adjust the min-width as needed */
+    .grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    }
+  }
